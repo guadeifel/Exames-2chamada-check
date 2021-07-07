@@ -52,14 +52,15 @@ const Home: React.FC = () => {
                         <option value="demissional">Demissional</option>
                     </select>
                     <select value={nomeexame} onChange={e => setNomeExame(e.target.value)} name="nomeexame" id="nomeexame">
+                        <option value="">Escolha um</option>
                         <option value="hemograma">Hemograma Completo</option>
                         <option value="audiometria">Audiometria</option>
                         <option value="acuidade">Acuidade Visual</option>
                     </select>
                     <select value={laboratorio} onChange={e => setLabs(e.target.value)} name="laboratorio" id="laboratorio">
+                        <option value="">Escolha um</option>
                         <option value="labfunc">Lab Funcional</option>
                         <option value="labmed">Lab Medicina</option>
-                        <option value="acuidade">Acuidade Visual</option>
                     </select>
                     <input value={mesanoexame} onChange={e => setData(e.target.value)} type='text' name='mesanoexame' placeholder='Mes e Ano' />
                     <button type="submit">Salvar</button>
@@ -74,7 +75,7 @@ const Home: React.FC = () => {
                         <li>Nome Exame: {item.nomeexame} </li>
                         <li>Laboratório: {item.laboratorio} </li>
                         <li>Mes e Ano: {item.mesanoexame} </li>
-                        <li><button onClick={()=>handleDelete(item.id)}>Deletar</button></li>
+                        <button onClick={()=>handleDelete(item.id)}>Deletar</button>
                 </ul>
                  )}
             

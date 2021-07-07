@@ -17,6 +17,7 @@ export const Container = styled.div`
       background-color:#f8f8f8;
       margin-top:30px;
       width:100%;
+      border-radius:5px;
   }
 
   span{
@@ -27,13 +28,18 @@ export const Container = styled.div`
     text-decoration: none;
   }
 
+  button{
+    margin-top:10px;
+  }
+
   ul li button{
+    cursor: pointer;
     padding: 5px 15px 5px 10px;
     border-radius: 6px;
     border:0;
-    background: #7159c1;
+    background: grey;
     color: #fff;
     font-weight: bold;
-    margin-left: 600px;
-    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-bottom: 10px
   }`

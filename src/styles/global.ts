@@ -31,13 +31,13 @@ input, select{
 button {
   cursor: pointer;
   padding: 5px 15px 5px 10px;
-    border-radius: 6px;
-    border:0;
-    background: grey;
-    color: #fff;
-    font-weight: bold;
-    margin-left: 250px;
-    margin-bottom: 10px
+  border-radius: 6px;
+  border:0;
+  background: grey;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px
 }
 
 input[type=text], select {
@@ -49,13 +49,21 @@ input[type=text], select {
   }
 
   div {border-color: coral;}
-  table{border-color: coral;}
-  tr
-{
+  table{
+    border-color: coral;
+    margin-bottom:10px;
+  }
+  tr{
   text-align: center;
-  background-color:green;
+  background-color:grey;
   color:black;
 }
+
+h1{
+  margin-bottom:50px;
+  color: #ddd;
+}
+
   
 
 `;
